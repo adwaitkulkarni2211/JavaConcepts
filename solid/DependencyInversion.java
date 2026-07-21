@@ -31,7 +31,7 @@ public class DependencyInversion {
                 return this.itemName;
             }
         }
-        class Order {
+        class  Order {
             Product product;
             String orderId;
 
