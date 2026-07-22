@@ -27,8 +27,7 @@ public class Singleton {
     }
 
     public class ThreadSafeLogger {
-        private static volatile ThreadSafeLogger
-                instance; // volatile keyword ensures visibility across threads
+        private static volatile ThreadSafeLogger instance; // volatile keyword ensures visibility across threads
 
         private ThreadSafeLogger() {
         } // Private constructor to prevent instantiation
