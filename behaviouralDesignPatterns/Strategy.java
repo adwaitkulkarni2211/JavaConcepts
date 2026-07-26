@@ -115,8 +115,7 @@ public class Strategy {
 
             // Process payment using the current strategy
             public void processPayment() {
-                paymentStrategy
-                        .processPayment(); // Delegate the payment processing to the strategy
+                paymentStrategy.processPayment(); // Delegate the payment processing to the strategy
             }
 
             // Dynamically change payment strategy at runtime
@@ -132,8 +131,7 @@ public class Strategy {
                 PaymentStrategy crypto = new CryptoPayment();
                 PaymentStrategy stripe = new StripePayment();
                 // Use the Strategy Pattern to process payments
-                PaymentProcessor processor =
-                        new PaymentProcessor(creditCard); // Initially using CreditCardPayment
+                PaymentProcessor processor = new PaymentProcessor(creditCard); // Initially using CreditCardPayment
                 processor.processPayment(); // Processing credit card payment...
                 // Dynamically change the payment strategy to PayPal
                 processor.setPaymentStrategy(payPal);
